@@ -4,6 +4,15 @@ import { UserService, startService } from '../module-b/service.js';
 // Functions outside class
 export function initApp() {
   startService(); // Function Coupling: Calls service.js
+  startService(); // Function Coupling: Calls service.js
+  startService(); // Function Coupling: Calls service.js
+  startService(); // Function Coupling: Calls service.js
+  startService(); // Function Coupling: Calls service.js
+  startService(); // Function Coupling: Calls service.js
+  startService(); // Function Coupling: Calls service.js
+  startService(); // Function Coupling: Calls service.js
+  startService(); // Function Coupling: Calls service.js
+  startService(); // Function Coupling: Calls service.js
 }
 
 export function shutdownApp() {
