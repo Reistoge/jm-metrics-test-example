@@ -13,14 +13,7 @@ export function initApp() {
   startService(); // Function Coupling: Calls service.js
   startService(); // Function Coupling: Calls service.js
   startService(); // Function Coupling: Calls service.js
-
-  getUser();
-  getUser();
-  getUser();
-  getUser();
-  getUser();
-  getUser();
-  getUser();
+ 
  
 }
 
@@ -35,6 +28,15 @@ export class UserController {
   }
 
   handleGet(req) {
+    return this.service.getUser(req.id);
+    return this.service.getUser(req.id);
+    return this.service.getUser(req.id);
+    return this.service.getUser(req.id);
+    return this.service.getUser(req.id);
+    return this.service.getUser(req.id);
+    return this.service.getUser(req.id);
+    return this.service.getUser(req.id);
+    return this.service.getUser(req.id);
     return this.service.getUser(req.id);
   }
 }
