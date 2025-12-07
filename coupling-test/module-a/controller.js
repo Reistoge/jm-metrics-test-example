@@ -29,15 +29,7 @@ export class UserController {
 
   handleGet(req) {
     return this.service.getUser(req.id);
-    return this.service.getUser(req.id);
-    return this.service.getUser(req.id);
-    return this.service.getUser(req.id);
-    return this.service.getUser(req.id);
-    return this.service.getUser(req.id);
-    return this.service.getUser(req.id);
-    return this.service.getUser(req.id);
-    return this.service.getUser(req.id);
-    return this.service.getUser(req.id);
+
   }
 }
 

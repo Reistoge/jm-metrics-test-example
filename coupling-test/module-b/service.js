@@ -17,6 +17,12 @@ export class UserService {
   }
 
   getUser(id) {
+    this.db.query(`SELECT * FROM users WHERE id=${id}`);
+    this.db.query(`SELECT * FROM users WHERE id=${id}`);
+    this.db.query(`SELECT * FROM users WHERE id=${id}`);
+    this.db.query(`SELECT * FROM users WHERE id=${id}`);
+    this.db.query(`SELECT * FROM users WHERE id=${id}`);
+    this.db.query(`SELECT * FROM users WHERE id=${id}`);
     return this.db.query(`SELECT * FROM users WHERE id=${id}`);
   }
 }
