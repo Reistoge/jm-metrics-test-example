@@ -13,6 +13,15 @@ export function initApp() {
   startService(); // Function Coupling: Calls service.js
   startService(); // Function Coupling: Calls service.js
   startService(); // Function Coupling: Calls service.js
+
+  UserService();
+  UserService();
+  UserService();
+  UserService();
+  UserService();
+  UserService();
+  UserService();
+  UserService();
 }
 
 export function shutdownApp() {
