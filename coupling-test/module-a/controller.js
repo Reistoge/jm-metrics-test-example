@@ -1,28 +1,18 @@
 // Import from Module B
-import { UserService, startService } from "../module-b/service.js";
+import { UserService, startService, stopService } from "../module-b/service.js";
 
 // Functions outside class
 export function initApp() {
-  startService(); // Function Coupling: Calls service.js
-  startService(); // Function Coupling: Calls service.js
-  startService(); // Function Coupling: Calls service.js
-  startService(); // Function Coupling: Calls service.js
-  startService(); // Function Coupling: Calls service.js
-  startService(); // Function Coupling: Calls service.js
+  
+    startService();
+ 
+ 
 }
 
 export function shutdownApp() {
-  startService(); // Function Coupling: Calls service.js
-  startService(); // Function Coupling: Calls service.js
-  startService(); // Function Coupling: Calls service.js
-  startService(); // Function Coupling: Calls service.js
-  startService(); // Function Coupling: Calls service.js
-  startService(); // Function Coupling: Calls service.js  startService(); // Function Coupling: Calls service.js
-  startService(); // Function Coupling: Calls service.js
-  startService(); // Function Coupling: Calls service.js
-  startService(); // Function Coupling: Calls service.js
-  startService(); // Function Coupling: Calls service.js
-  startService(); // Function Coupling: Calls service.js
+ 
+    stopService();
+ 
   console.log("Bye");
 }
 
@@ -33,12 +23,6 @@ export class UserController {
   }
 
   handleGet(req) {
-    this.service.getUser(req.id);
-    this.service.getUser(req.id);
-    this.service.getUser(req.id);
-    this.service.getUser(req.id);
-    this.service.getUser(req.id);
-    this.service.getUser(req.id);
     return this.service.getUser(req.id);
   }
 }
